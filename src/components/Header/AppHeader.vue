@@ -1,5 +1,5 @@
 <template>
-  <header class="header" :class="{ closed: !toggle }">
+  <header class="app-header" :class="{ closed: !toggle }">
     <div class="flex justify-space-between">
       <div class="flex align-center">
         <span
@@ -32,14 +32,14 @@ defineProps({
 </script>
 
 <style scoped>
-.header {
-  padding: 10px 0px;
+.app-header {
+  padding: 20px 0px;
   position: fixed;
   top: 0;
   width: calc(100% - 340px);
   background-color: white;
 }
-.header.closed {
+.app-header.closed {
   width: 100%;
 }
 .menu-icon {
@@ -54,8 +54,8 @@ defineProps({
 }
 
 .image {
-  height: 3em;
-  width: 3em;
+  height: 3rem;
+  width: 3rem;
   border-radius: 100%;
   margin: 0px 10px;
 }
@@ -64,7 +64,6 @@ defineProps({
   font-size: 2.125rem;
   font-weight: 400;
   line-height: 2.5rem;
-  letter-spacing: 0.00735em;
   color: black;
   margin-left: 10px;
 }

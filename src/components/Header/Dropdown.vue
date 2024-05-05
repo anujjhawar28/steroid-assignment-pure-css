@@ -7,7 +7,7 @@
     <span class="dropdown-label flex"
       >{{ selectedValue }}
       <span class="material-icons dropdown-icon">
-        {{ isOpen ? "expand_more" : "expand_less" }}
+        {{ !isOpen ? "expand_more" : "expand_less" }}
       </span>
     </span>
     <div v-if="isOpen" class="dropdown-menu">

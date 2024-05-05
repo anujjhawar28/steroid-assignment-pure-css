@@ -1,8 +1,8 @@
 <template>
-  <div class="flex overflow-hidden">
+  <div class="flex-container overflow-hidden">
     <AppSidebar :toggle="toggle" />
-    <div class="p-10 mt-50">
-      <AppHeader :toggle="toggle" @menu-click="toggle = !toggle" />
+    <div class="p-10 mt-40">
+      <AppHeader :toggle="toggle" />
       <RouterView />
     </div>
   </div>
