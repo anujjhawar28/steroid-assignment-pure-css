@@ -243,11 +243,19 @@ body {
   margin-right: 20px;
 }
 
+.mt-20{
+  margin-top: 20px;
+}
 .mt-40{
   margin-top: 40px;
 }
 .mt-50{
   margin-top: 50px;
+}
+
+.my-20{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Padding Classes */

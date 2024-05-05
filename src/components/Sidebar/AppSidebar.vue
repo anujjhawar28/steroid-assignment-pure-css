@@ -1,12 +1,13 @@
 <template>
   <Transition name="slide">
-    <aside class="sidebar" :class="{ closed: !toggle }" v-if="toggle">
-      This is Sidebar Content
+    <aside class="sidebar p-20" :class="{ closed: !toggle }" v-if="toggle">
+      <SidebarBody />
     </aside>
   </Transition>
 </template>
 
 <script setup>
+import SidebarBody from "./SidebarBody.vue";
 defineProps({
   toggle: {
     type: Boolean,

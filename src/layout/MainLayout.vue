@@ -10,7 +10,7 @@
 
 <script setup>
 import AppHeader from "../components/Header/AppHeader.vue";
-import AppSidebar from "../components/AppSidebar.vue";
+import AppSidebar from "../components/Sidebar/AppSidebar.vue";
 import { ref } from "vue";
 
 const toggle = ref(true);
