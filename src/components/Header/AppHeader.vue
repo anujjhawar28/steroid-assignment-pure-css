@@ -36,7 +36,7 @@ defineProps({
   padding: 10px 0px;
   position: fixed;
   top: 0;
-  width: calc(100% - 300px);
+  width: calc(100% - 340px);
   background-color: white;
 }
 .header.closed {
