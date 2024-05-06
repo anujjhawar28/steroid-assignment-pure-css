@@ -1,21 +1,19 @@
 <template>
   <header class="app-header" :class="{ closed: !toggle }">
-    <div class="flex justify-space-between">
-      <div class="flex align-center">
-        <span
-          @click="$emit('menu-click')"
-          class="material-symbols-outlined menu-icon"
-        >
-          menu
-        </span>
-        <div class="heading">Overview</div>
-      </div>
+    <div class="flex align-center">
+      <span
+        @click="$emit('menu-click')"
+        class="material-symbols-outlined menu-icon"
+      >
+        menu
+      </span>
+      <div class="heading">Overview</div>
+    </div>
 
-      <div class="flex mr-20 align-center hidden-sm">
-        <span class="material-icons"> notifications </span>
-        <img src="https://cdn.quasar.dev/img/avatar.png" class="image" />
-        <Dropdown />
-      </div>
+    <div class="flex mr-20 align-center hidden-sm">
+      <span class="material-icons"> notifications </span>
+      <img src="https://cdn.quasar.dev/img/avatar.png" class="image" />
+      <Dropdown />
     </div>
   </header>
 </template>
@@ -33,6 +31,8 @@ defineProps({
 
 <style scoped>
 .app-header {
+  display: flex;
+  justify-content: space-between;
   padding: 20px 0px;
   position: fixed;
   top: 0;
