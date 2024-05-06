@@ -1,7 +1,7 @@
 <template>
   <div class="flex-container overflow-hidden">
     <AppSidebar :toggle="toggle" />
-    <div class="p-10 mt-40 right-section">
+    <div class="p-10 mt-40 w-full">
       <AppHeader :toggle="toggle" @menu-click="toggle = !toggle" />
       <RouterView />
     </div>
@@ -15,9 +15,3 @@ import { ref } from "vue";
 
 const toggle = ref(true);
 </script>
-
-<style scoped>
-.right-section {
-  width: 100%;
-}
-</style>
