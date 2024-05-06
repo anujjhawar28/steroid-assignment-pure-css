@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-container overflow-hidden">
+  <div class="flex-container">
     <AppSidebar :toggle="toggle" />
     <div class="p-10 mt-40 w-full">
       <AppHeader :toggle="toggle" @menu-click="toggle = !toggle" />

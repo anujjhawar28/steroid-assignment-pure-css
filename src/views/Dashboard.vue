@@ -27,6 +27,6 @@ import DashboardTable from "../components/Dashboard/DashboardTable.vue";
 .flex-item-right {
   flex-basis: 100%;
   flex: 30%;
-  min-width: 30rem;
+  min-width: 20rem;
 }
 </style>
